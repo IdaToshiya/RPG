@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="player"><img src="img/player.png" alt=""></div>
+        <div class="textarea"></div>
+        <div class="enemy"><img src="img/enemy1.png" alt=""></div>
+    </div>
+
+    <div class="command">
+        <div class="area" id="player_area">
+            <select name="" id="">
+                <option value="attack">攻撃</option>
+                <option value="heal">回復</option>
+                <option value="defence">防御</option>
+            </select>
+            <div class="status" id="player_status">
+                <div class="HP">HP 100/100</div>
+                <div class="SP">SP 50/50</div>
+            </div>
+        </div>
+        <div class="area" id="enemy_area">
+            <div class="enemy_command">攻撃</div>
+            <div class="status" id="enemy_status">
+                <div class="HP">HP 100/100</div>
+                <div class="SP">SP 50/50</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="decision_button">
+        <input type="button" value="ターン" onclick="clickDecision()"/>
+    </div>
+
+    <!-- スクリプト読み込み -->
+    <script src="js/main.js"></script>
+</body>
+</html>

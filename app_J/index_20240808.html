@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- レイアウト -->
+    <div class="main">
+        <div class="player"><img src="img/player.png" alt="" id="player_img"></div>
+        <!-- <p>選択した行動 <span id="selectCommand"></span></p>
+        <p id="a"></p>
+        <p id="b"></p> -->
+        <textarea class="textarea" id="log"></textarea>
+        <div class="enemy"><img src="img/enemy1.png" alt=""></div>
+    </div>
+
+    <div class="command">
+        <div class="area" id="player_area">
+            <select name="skill" id="skill">
+                <option value="attack">攻撃</option>
+                <option value="heal">回復</option>
+                <option value="defense">防御</option>
+            </select>
+            <div class="status" id="player_status">
+                    <div class="HP">
+                        <p id="playerHP"></p>
+                    </div>
+                <div class="SP">
+                    <p id="playerSP"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area" id="enemy_area">
+            <div class="enemy_command">
+                <p>エネミー</p>
+                <p id="enemy_command"></p>
+            </div>
+            <div class="status" id="enemy_status">
+                <div class="HP">
+                    <p id="enemyHP"></p>
+                </div>
+                <div class="SP">
+                    <p id="enemySP"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="decision_button" id="decision_button">
+        <button id="turn_btn">ターン</button>
+        <!-- <input type="button" value="ターン" onclick="clickDecition()"/> -->
+        
+    </div>
+
+    <!-- レイアウト終了 -->
+        <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    width: 100vw;
+    background-image: url("../img/炎の洞窟.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.hp_bar {
+    padding-top: 2vw;
+}
+
+.content_bar {
+    width: 5vw;
+    height: 1vw;
+    border: solid 0.1vw black;
+    border-radius: 0.5vw;
+    background-color: aqua;
+}
+
+.player {
+    /* background-color: aqua; */
+    width: 25vw;
+    text-align: center;
+}
+
+.player img {
+    width: 15vw;
+}
+
+.textarea {
+    background-color: rgb(238, 0, 255);
+    width: 20vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.enemy {
+    /* background-color: rgb(255, 0, 0); */
+    width: 25vw;
+    text-align: center;
+    
+}
+
+.enemy img {
+    width: 20dvw;
+    padding-top: 3vw;
+}
+
+.command {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.status {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.area {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vw;
+    font-weight: 600;
+    border-radius: 2vw;
+}
+
+.area select {
+    font-size: 2vw;
+    font-weight: 600;
+    width: 8vw;
+    text-align: center;
+}
+
+#player_area {
+    background-color: rgb(3, 3, 244);
+}
+
+#enemy_area {
+    background-color: brown;
+}
+
+.enemy_command {
+    display: block;
+    background-color: white;
+    width: 8vw;
+}
+
+.enemy_command p {
+    text-align: center;
+}
+
+.decision_button {
+    text-align: center;
+}
+
+.decision_button button {
+    font-size: 3vw;
+}

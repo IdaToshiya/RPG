@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- レイアウト -->
+    <div class="main">
+        <div class="hp_bar" id="player_bar">
+            <div class="content_bar" id="player_bar_1"></div>
+            <div class="content_bar" id="player_bar_2"></div>
+            <div class="content_bar" id="player_bar_3"></div>
+            <div class="content_bar" id="player_bar_4"></div>
+            <div class="content_bar" id="player_bar_5"></div>
+            <div class="content_bar" id="player_bar_6"></div>
+            <div class="content_bar" id="player_bar_7"></div>
+            <div class="content_bar" id="player_bar_8"></div>
+            <div class="content_bar" id="player_bar_9"></div>
+            <div class="content_bar" id="player_bar_10"></div>
+            <div class="content_bar" id="player_bar_11"></div>
+            <div class="content_bar" id="player_bar_12"></div>
+            <div class="content_bar" id="player_bar_13"></div>
+            <div class="content_bar" id="player_bar_14"></div>
+            <div class="content_bar" id="player_bar_15"></div>
+            <div class="content_bar" id="player_bar_16"></div>
+            <div class="content_bar" id="player_bar_17"></div>
+            <div class="content_bar" id="player_bar_18"></div>
+            <div class="content_bar" id="player_bar_19"></div>
+            <div class="content_bar" id="player_bar_20"></div>
+        </div> 
+        <div class="player"><img src="img/player.png" alt="" id="player_img"></div>
+        <!-- <p>選択した行動 <span id="selectCommand"></span></p>
+        <p id="a"></p>
+        <p id="b"></p> -->
+        <textarea class="textarea" id="log"></textarea>
+        <div class="enemy"><img src="img/enemy1.png" alt=""></div>
+        <div class="hp_bar" id="enemy_bar">
+            <div class="content_bar" id="enemy_bar_1"></div>
+            <div class="content_bar" id="enemy_bar_2"></div>
+            <div class="content_bar" id="enemy_bar_3"></div>
+            <div class="content_bar" id="enemy_bar_4"></div>
+            <div class="content_bar" id="enemy_bar_5"></div>
+            <div class="content_bar" id="enemy_bar_6"></div>
+            <div class="content_bar" id="enemy_bar_7"></div>
+            <div class="content_bar" id="enemy_bar_8"></div>
+            <div class="content_bar" id="enemy_bar_9"></div>
+            <div class="content_bar" id="enemy_bar_10"></div>
+            <div class="content_bar" id="enemy_bar_11"></div>
+            <div class="content_bar" id="enemy_bar_12"></div>
+            <div class="content_bar" id="enemy_bar_13"></div>
+            <div class="content_bar" id="enemy_bar_14"></div>
+            <div class="content_bar" id="enemy_bar_15"></div>
+            <div class="content_bar" id="enemy_bar_16"></div>
+            <div class="content_bar" id="enemy_bar_17"></div>
+            <div class="content_bar" id="enemy_bar_18"></div>
+            <div class="content_bar" id="enemy_bar_19"></div>
+            <div class="content_bar" id="enemy_bar_20"></div>
+        </div>
+    </div>
+
+    <div class="command">
+        <div class="area" id="player_area">
+            <select name="skill" id="skill">
+                <option value="attack">攻撃</option>
+                <option value="heal">回復</option>
+                <option value="defense">防御</option>
+            </select>
+            <div class="status" id="player_status">
+                    <div class="HP">
+                        <p id="playerHP"></p>
+                    </div>
+                <div class="SP">
+                    <p id="playerSP"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area" id="enemy_area">
+            <div class="enemy_command">
+                <p>エネミー</p>
+                <p id="enemy_command"></p>
+            </div>
+            <div class="status" id="enemy_status">
+                <div class="HP">
+                    <p id="enemyHP"></p>
+                </div>
+                <div class="SP">
+                    <p id="enemySP"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="decision_button" id="decision_button">
+        <button id="turn_btn">ターン</button>
+        <!-- <input type="button" value="ターン" onclick="clickDecition()"/> -->
+        
+    </div>
+
+    <!-- レイアウト終了 -->
+        <script src="js/main.js"></script>
+</body>
+</html>
